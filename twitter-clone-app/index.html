@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    </head>
+
+<body>
+    <div class="container_home-page">
+        <div class="navigation-bar">
+            <nav>
+                <div class="twitter-logo"> <i class="fab fa-twitter"></i> 
+                </div>
+                <div class="twitter-home"><i class="fas fa-home"></i>
+                <div class="nav-border"></div>
+                </div>
+                <div class="twitter-profile">
+                    <div class="profile"></div>
+                </div>
+            </nav>
+        </div>
+    <div class="main-tweets-content">
+        <div class="tweet-search-bar">
+            <input id="user-search-bar" type="text" placeholder="Search Twitter" onkeyup="onEnter(event)">
+            <div class="search-icon">
+                <i class="fas fa-search fa-flip-horizontal" onclick="getTwitterData()"></i>
+            </div>
+        </div>
+
+        <div class="tweets-container">
+            <div class="tweets-list">
+                <div class="tweets-welcome-message">
+                    <h5>Welcome to Twitter!</h5>
+                    <p>Use the search above to see what's happening around the world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="trending-hashtags">
+        <div class="trending-hashtags-container">
+            <div class="hashtags">
+                <div class="hashtag-heading">Trends for you</div>
+                <ul class="hashtag-component">
+                    <li onclick="selectTrend(this)">#Coding</li>
+                    <li onclick="selectTrend(this)" >#Python</li>
+                    <li onclick="selectTrend(this)">#Javascript</li>
+                    <li onclick="selectTrend(this)">#Blockchain</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <script src="js/index.js" async defer></script>
+    </body>
+</html>
